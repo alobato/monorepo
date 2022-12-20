@@ -1,0 +1,41 @@
+{
+  "name": "components",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsup src/index.js --format esm,cjs --external react",
+    "dev": "tsup src/index.js --format esm,cjs --watch --external react"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.10.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@popperjs/core": "^2.11.5",
+    "@react-spring/web": "^9.4.5",
+    "@theme-ui/css": "^0.14.7",
+    "@zag-js/core": "^0.1.10",
+    "@zag-js/react": "^0.1.16",
+    "@zag-js/tabs": "^0.1.13",
+    "@zag-js/toggle": "0.1.13",
+    "hooks": "*",
+    "react-dom": "^18.2.0",
+    "react-imask": "^6.4.2",
+    "react-popper": "^2.3.0",
+    "react-router-dom": "^6.3.0",
+    "theme-ui": "^0.14.7",
+    "use-callback-ref": "^1.3.0",
+    "use-double-tap": "^1.3.4",
+    "use-events": "^1.4.2"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "tsup": "^6.2.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "contexts",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsup src/index.js --format esm,cjs --external react",
+    "dev": "tsup src/index.js --format esm,cjs --watch --external react"
+  },
+  "dependencies": {
+    "react-hot-toast": "^2.3.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "tsup": "^6.2.1"
+  }
+}

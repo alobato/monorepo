@@ -1,0 +1,18 @@
+{
+  "name": "theme",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.js --format esm,cjs --external react",
+    "dev": "tsup src/index.js --format esm,cjs --watch --external react"
+  },
+  "devDependencies": {
+    "tsup": "^6.2.1"
+  }
+}
